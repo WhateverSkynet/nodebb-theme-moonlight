@@ -1,0 +1,8 @@
+{
+  "name": "nodebb-theme-moonlight",
+  "version": "0.0.1",
+  "description": "Moonlight theme",
+  "main": "theme.less",
+  "keywords": [],
+  "license": "MIT"
+}
