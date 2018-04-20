@@ -1,0 +1,7 @@
+{
+  "id": "nodebb-theme-moonlight",
+  "name": "Moonlight theme",
+  "description": "Whatever...",
+  "url": "https://github.com/nodebb/nodebb-theme-moonlight",
+  "baseTheme": "nodebb-theme-persona"
+}
