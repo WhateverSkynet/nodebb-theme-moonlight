@@ -1,6 +1,6 @@
 {
   "name": "nodebb-theme-moonlight",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Moonlight theme",
   "main": "theme.less",
   "keywords": [],
