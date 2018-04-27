@@ -25,7 +25,7 @@
 </head>
 
 <body class="{bodyClass} skin-{config.bootswatchSkin}">
-	<div class="header-container">
+		<div class="header-container">
 		<div class="header container">
 				<div class="header-row hidden-xs">
 					<a class="logo-wrapper" href="<!-- IF brand:logo:url -->{brand:logo:url}<!-- ELSE -->{relative_path}/<!-- ENDIF brand:logo:url -->">
@@ -49,35 +49,12 @@
 			<!-- ENDIF user.uid -->
 		</div>
 
-		<section class="menu-section">
-				<h3 class="menu-section-title">[[global:header.navigation]]</h3>
-				<ul class="menu-section-list">
-					<li>
-						<a href="/apply">Apply</a>
-					</li>
-					<!-- IF !config.loggedIn -->
-					<li>
-						<a href="/register">Register</a>
-					</li>
-					<li>
-						<a href="/login">Login</a>
-					</li>
-					<!-- IF !config.loggedIn -->
-				</ul>
-			</section>
+		<section class="menu-section" data-section="navigation">
+			<h3 class="menu-section-title">[[global:header.navigation]]</h3>
+			<ul class="menu-section-list"></ul>
+		</section>
 
 		<!-- IF config.loggedIn -->
-		<section class="menu-section">
-				<h3 class="menu-section-title">Tools</h3>
-				<ul class="menu-section-list">
-					<li>
-						<a href="/applications">Applications</a>
-					</li>
-					<li>
-						<a href="/roster">Roster</a>
-					</li>
-				</ul>
-			</section>
 		<section class="menu-section" data-section="profile">
 			<h3 class="menu-section-title">[[global:header.profile]]</h3>
 			<ul class="menu-section-list" component="header/usercontrol"></ul>
@@ -106,10 +83,6 @@
 	</nav>
 
 	<main id="panel" class="slideout-panel">
-		<nav class="navbar navbar-default navbar-fixed-top header" id="header-menu" component="navbar">
-			<div class="container">
-				<!-- IMPORT partials/menu.tpl -->
-			</div>
-		</nav>
+
 		<div class="container" id="content">
 		<!-- IMPORT partials/noscript/warning.tpl -->

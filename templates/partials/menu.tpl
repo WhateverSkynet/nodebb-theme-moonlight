@@ -68,7 +68,7 @@
 	<ul id="main-nav" class="nav navbar-nav menu">
 				<!-- IF !user.isMember -->
 			<li class="active">
-				<a class="button" href="/apply" title="Apply">
+				<a class="nav-button" href="/apply" title="Apply">
 				<span class="">Apply</span>
 				</a>
 			</li>
@@ -76,7 +76,7 @@
 		<!-- BEGIN navigation -->
 		<!-- IF function.displayMenuItem, @index -->
 		<li class="{navigation.class}">
-			<a class="button" href="{navigation.route}" title="{navigation.title}" <!-- IF navigation.id -->id="{navigation.id}"<!-- ENDIF navigation.id --><!-- IF navigation.properties.targetBlank --> target="_blank"<!-- ENDIF navigation.properties.targetBlank -->>
+			<a class="nav-button" href="{navigation.route}" title="{navigation.title}" <!-- IF navigation.id -->id="{navigation.id}"<!-- ENDIF navigation.id --><!-- IF navigation.properties.targetBlank --> target="_blank"<!-- ENDIF navigation.properties.targetBlank -->>
 							<!-- IF navigation.text -->
 							<span class="{navigation.textClass}">{navigation.text}</span>
 							<!-- ENDIF navigation.text -->
@@ -87,7 +87,7 @@
 		<!-- IF config.loggedIn -->
 
 		<li class="dropdown text-center hidden-xs">
-			<a href="#" title="" class="dropdown-toggle button" data-toggle="dropdown" id="tools_dropdown">
+			<a href="#" title="" class="dropdown-toggle nav-button" data-toggle="dropdown" id="tools_dropdown">
 				Tools
 			</a>
 			<ul class="dropdown-menu" aria-labelledby="tools_dropdown">
@@ -100,7 +100,7 @@
 			</ul>
 
 			<li class="notifications dropdown text-center hidden-xs" component="notifications">
-				<a href="#" title="[[global:header.notifications]]" class="dropdown-toggle button" data-toggle="dropdown" id="notif_dropdown">
+				<a href="#" title="[[global:header.notifications]]" class="dropdown-toggle nav-button" data-toggle="dropdown" id="notif_dropdown">
 					<i component="notifications/icon" class="fa fa-fw fa-bell-o" data-content="0"></i>
 				</a>
 				<ul class="dropdown-menu" aria-labelledby="notif_dropdown">
@@ -116,7 +116,7 @@
 				</ul>
 
 				<li id="user_label" class="dropdown">
-					<a class="dropdown-toggle button" data-toggle="dropdown" href="#" id="user_dropdown" title="[[global:header.profile]]">
+					<a class="dropdown-toggle nav-button" data-toggle="dropdown" href="#" id="user_dropdown" title="[[global:header.profile]]">
 						<span id="user-header-name">Profile</span>
 					</a>
 					<ul id="user-control-list" component="header/usercontrol" class="dropdown-menu" aria-labelledby="user_dropdown">
@@ -166,7 +166,7 @@
 
 				<!-- IF !config.disableChat -->
 				<li class="chats dropdown">
-					<a class="dropdown-toggle" data-toggle="dropdown" href="#" title="[[global:header.chats]]" id="chat_dropdown" component="chat/dropdown">
+					<a class="dropdown-toggle nav-button" data-toggle="dropdown" href="#" title="[[global:header.chats]]" id="chat_dropdown" component="chat/dropdown">
 						<i component="chat/icon" class="fa fa-comment-o fa-fw"></i> <span class="visible-xs-inline">[[global:header.chats]]</span>
 					</a>
 					<ul class="dropdown-menu" aria-labelledby="chat_dropdown">
@@ -187,14 +187,14 @@
 
 	<!-- IF allowRegistration -->
 	<li>
-		<a href="{relative_path}/register" class="button">
+		<a href="{relative_path}/register" class="nav-button">
 			<i class="fa fa-pencil visible-xs-inline"></i>
 			<span>[[global:register]]</span>
 		</a>
 	</li>
 	<!-- ENDIF allowRegistration -->
 	<li>
-		<a href="{relative_path}/login" class="button">
+		<a href="{relative_path}/login" class="navbutton">
 			<i class="fa fa-sign-in visible-xs-inline"></i>
 			<span>[[global:login]]</span>
 		</a>
