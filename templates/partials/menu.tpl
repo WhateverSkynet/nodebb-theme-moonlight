@@ -194,7 +194,7 @@
 	</li>
 	<!-- ENDIF allowRegistration -->
 	<li>
-		<a href="{relative_path}/login" class="navbutton">
+		<a href="{relative_path}/login" class="nav-button">
 			<i class="fa fa-sign-in visible-xs-inline"></i>
 			<span>[[global:login]]</span>
 		</a>
