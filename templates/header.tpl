@@ -32,7 +32,7 @@
 						<img alt="{brand:logo:alt}" class="{brand:logo:display} logo" src="{brand:logo}" />
 					</a>
 				</div>
-				<div class="menu">
+				<div class="menu" id="header-menu" component="navbar">
 					<!-- IMPORT partials/menu.tpl -->
 				</div>
 			</div>
